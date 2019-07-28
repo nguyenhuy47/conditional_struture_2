@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra canh cua tam giac</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("nhap vao canh a:"));
+    let b = parseFloat(prompt("nhap vao canh b:"));
+    let c = parseFloat(prompt("nhap vao canh c:"));
+    let result;
+    if(a > 0 && b > 0 && c > 0)
+        if(a + b > c && a + c > b && b + c > a){
+            result = "a, b, c là cạnh của tam giac"
+        }else{
+            result = " a, b, c không phải là cạnh của tam giac"
+        }
+    else {
+        result = " a, b, c không phải là cạnh của tam giac"
+    }
+    document.write(result);
+</script>
+</body>
+</html>

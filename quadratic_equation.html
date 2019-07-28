@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giai phuong trinh bac nhat</title>
+</head>
+<body>
+<h1>Giai phuong trinh bac hai</h1>
+<input id="input1" placeholder="nhap vao gia tri a:"> x2 + <input id="input2" placeholder="nhap vao gia tri b:"> x + <input id="input3" placeholder="nhap vao gia tri c"> = 0;
+<button type="button" onclick="calculation()">Calculation</button><br>
+Result1:<span id="kq1"></span><br>
+Result2:<span id="kq2"></span><br>
+
+<script>
+    function calculation() {
+        let a = input1.value;
+        let b = input2.value;
+        let c = input3.value;
+        let delta = b*b - 4*a*c;
+        let result1;
+        let result2;
+        if(delta < 0){
+            result1 = "not result";
+            result2 = "not result";
+        }else if(delta == 0){
+            result1 = -b/2*a;
+            result2 = -b/2*a;
+        }else {
+            result1 = (- b - Math.sqrt(delta))/2*a;
+            result2 = (- b + Math.sqrt(delta))/2*a;
+        }
+        document.getElementById("kq1").innerHTML = result1;
+        document.getElementById("kq2").innerHTML = result2;
+    }
+</script>
+</body>
+</html>

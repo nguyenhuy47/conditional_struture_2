@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>from met to feet</title>
+</head>
+<body>
+Input:<input id="input1">
+<button type="button" onclick="convert()">Convert</button>
+Result:<span id="kq"></span>
+<script>
+    function convert() {
+        let measure = input1.value;
+        let result = measure * 3.2808;
+        document.getElementById("kq").innerHTML = result;
+    }
+</script>
+</body>
+</html>

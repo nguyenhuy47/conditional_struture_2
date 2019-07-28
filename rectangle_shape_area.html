@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh dien tich hinh vuong</title>
+</head>
+<body>
+Input a:<input type="number" id="input" style="width: 200px" placeholder="nhap vao canh a:">
+Input b:<input type="number" id="input1" style="width: 200px" placeholder="nhap vao canh b:">
+<button type="button" onclick="getArea()">showResult</button>
+Result:<span id="kq"></span>
+<script>
+
+    function getArea() {
+        let a = input.value;
+        let b = input1.value;
+        let area = a*b;
+        document.getElementById("kq").innerHTML = area;
+    }
+</script>
+</body>
+</html>

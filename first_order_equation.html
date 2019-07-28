@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giai phuong trinh bac nhat</title>
+</head>
+<body>
+<h1>Giai phuong trinh bac nhat</h1>
+<input id="input1" placeholder="nhap vao gia tri a:"> x + <input id="input2" placeholder="nhap vao gia tri b:"> = 0;
+<button type="button" onclick="calculation()">Calculation</button>
+Result:<span id="kq"></span>
+<script>
+    function calculation() {
+        let a = input1.value;
+        let b = input2.value;
+        let result = -b/a;
+        document.getElementById("kq").innerHTML = result;
+    }
+</script>
+
+</body>
+</html>
